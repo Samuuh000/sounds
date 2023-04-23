@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #FFFFFF;
+  --main-color: #323238;
+  --bg-card-on: #02799D;
+  --bg-card-off: #E1E1E6;
+
+  font-size: 62.5%;
+}
+body {
+  background: var(--bg-color);
+  color: var(--main-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  
+  display: grid;
+  min-height: 100vh;
+}
+.hide {
+  display: none;
+}
+main {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  gap: 19rem;
+  padding: 19rem 22rem;
+}
+
+.timer {
+  font-size: clamp(12.8rem, 12rem + 10vw, 16.6rem);
+  display: flex;
+  margin-bottom: 4.8rem;
+  margin-top: 4.4rem;
+  
+  line-height: 14.8rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+
+}
+.cards button{
+  width: 13.8rem;
+  height: 15.2rem;
+  background: var(--bg-card-off);
+  border-radius: 2.4rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3.2rem;
+} 
+
+.cards button:hover {
+  background: #7fb7c9;
+  cursor: pointer;
+}
+
+.cards button.on {
+  background: #02799D;
+}
+.off {
+  background: none;
+  border-radius: 2.4rem;
+}
+
+/*
+.off {
+  background: var(--bg-card-off);
+}
+
+.on button svg path {
+  fill: white;
+  background-color: var(--bg-card-on);
+}
+
+*/
+
+/*.card .on:active{
+  background-color: var(--bg-card-on);
+} */
